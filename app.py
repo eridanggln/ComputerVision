@@ -12,7 +12,7 @@ os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 os.makedirs(app.config['RESULT_FOLDER'], exist_ok=True)
 
 # Load YOLOv5 model
-model = torch.hub.load('yolov5', 'custom', path='yolov5/runs/train/exp3/weights/best.pt', source='local')
+model = torch.hub.load('yolov5', 'custom', path='yolov5/runs/train/exp4/weights/best.pt', source='local')
 
 @app.route('/')
 def index():
